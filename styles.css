@@ -1,69 +1,43 @@
 
-
-
 body { font-family: Outfit;
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+}
+main { 
     background:  hsl(212, 45%, 89%);
     width: 100%;
-    height: 100%;
-    margin-top: 0;
-    margin-left:  0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
 }
-div {  background: white;
-    max-width: 50%;
-    margin: 50% auto;
-    padding: 10px;
+
+.container {  background: white;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
     text-align: center;
-    border-radius: 30px;
+    padding-bottom: 15px;
+    padding-top: 2px;
 }
 
-img {max-width: 95%;
-    margin: 10px auto;
-border-radius: 20px;}
+.container img { width: 90%;
+    margin: 13px 0;
+border-radius: 10px;}
 
-h1 { font-weight: bolder;
+.container h1 { font-weight: 700;
+    font-size: 23px;
 color:   hsl(218, 44%, 22%);}
 
-p { font-size: 15px; color:  hsl(220, 15%, 55%);}
-
-/* responsive */
-@media  screen and ( min-width: 375px) {
-    div { 
-        max-width: 80%;
-        margin: 50% auto;
-        padding: 10px;
-        text-align: center;
-        border-radius: 20px;
-    } 
-    h1{  font-size: 26px ;}
-    p { font-size: 16px;}
-    
+.container p { font-size: 15px; color:  hsl(220, 15%, 55%);
+margin-top: 0; padding-bottom: 5px;
 }
 
-@media  screen and ( min-width: 600px) {
-    div { 
-        max-width: 80%;
-        margin: 50% auto;
-        padding: 10px;
-        text-align: center;
-        border-radius: 20px;
-    } 
-    h1{  font-size: 35px ;}
-    p { font-size: 23px;}
-    
-}
-@media  screen and ( min-width: 1000px) {
-    div { 
-        max-width: 40%;
-        margin: 50% auto;
-        padding: 10px;
-        text-align: center;
-        border-radius: 20px;
-    } 
-    h1{  font-size: 40px ;}
-    p { font-size: 26px;}
-    img {max-width: 95%;
-        margin: 10px auto;
-    border-radius: 20px;}
-    
-}
+
